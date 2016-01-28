@@ -56,7 +56,7 @@ cat > /var/tmp/configure_hiera.pp << 'EOF'
 class { 'hiera':
   hierarchy => [
     'nodes/%{clientcert}',
-    '${environment}',
+    '%{environment}',
     'common',
   ],
   logger   => 'console',
