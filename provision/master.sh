@@ -44,12 +44,6 @@ ini_setting { 'Configure environmentpath':
   value   => '$confdir/environments',
 }
 
-ini_setting { 'Configure virtual'
-  section => 'master',
-  setting => 'allow_virtual',
-  value   => 'true',
-}
-
 ini_setting { 'Configure basemodulepath':
   section => 'main',
   setting => 'basemodulepath',
